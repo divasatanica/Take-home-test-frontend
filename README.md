@@ -1,67 +1,50 @@
-# Frontend Developer Coding Challenge
+# Frontend Engineer Coding Challenge
 
-## Task: 
-You are tasked with building a mini-invoicing dashboard. Your goal is to create a responsive web app that allows users to view and manage invoices. The design should be simple, clean, and aligned with the branding of Attelas.ai (you can take inspiration from the design at Attelas.ai). 
+This project involves building a **mini-invoicing dashboard** where users can view and manage invoices. The goal is to create a responsive web app that aligns with the design and branding of [Attelas.ai](https://attelas.ai).
 
-## Requirements: 
+## Task Overview
 
-### 1. Invoices List Page: 
+Your task is to create a simple and clean invoicing dashboard using **React** and **TypeScript** that allows users to:
+- View a list of invoices
+- See detailed information about each invoice
+- Chase overdue invoices with a pre-generated email reminder
 
-Display a list of invoices. 
+## Requirements
 
-Each invoice should display basic details such as: 
+### 1. Invoices List Page
+- Display a list of invoices.
+- Each invoice should show:
+  - **Invoice Number**
+  - **Client Name**
+  - **Total Amount Due**
+  - **Due Date**
+  - **Status** (Paid, Pending, Overdue)
+- Clicking on an invoice should navigate to the **Invoice Details Page**.
 
-Invoice Number 
+#### Data Source:
+- **Invoices Data**: [invoices-attelas.json](https://attelasstorageoutlookdev.blob.core.windows.net/codetest/invoices-attelas.json)
+- **Clients Data**: [clients-attelas.json](https://attelasstorageoutlookdev.blob.core.windows.net/codetest/clients-attelas.json)
 
-Client Name 
+### 2. Invoice Details Page
+- Display full details of the selected invoice.
+- Include a "Chase" button that opens a dialog (see Chase feature below).
 
-Total Amount Due 
+### 3. Chase Feature
+- Clicking the "Chase" button should generate a fake **email preview** that includes:
+  - **Client Name**
+  - **Invoice Number** and **Amount Due**
+  - **Due Date**
+  - A polite message reminding the client to pay
+- The email preview should be shown in a dialog but does not need to actually send.
 
-Due Date 
+## Technical Requirements
 
-Status (Paid, Pending, Overdue) 
+- Use **React** with **TypeScript**.
+- Ensure the app is **responsive** and works well on both desktop and mobile devices.
+- You are free to use a UI component library like **Material UI** or **Bootstrap**.
+- Code quality should be production-ready while keeping the solution **simple and clean**.
 
-Clicking on an individual invoice should open the Invoice Details Page (see below). 
+## Bonus Points
 
-The data should be fetched from here:  
-
-https://attelasstorageoutlookdev.blob.core.windows.net/codetest/invoices-attelas.json 
-
-https://attelasstorageoutlookdev.blob.core.windows.net/codetest/clients-attelas.json 
-
-### 2. Invoice Details Page: 
-
-Display full details of a selected invoice 
-
-Include a "Chase" button that opens a dialog (see below) 
-
-### 3. Chase feature: 
-
-Clicking this button should generate a fake email preview (in a dialog) that looks like a well-formatted email reminder to the client, including the following information: 
-
-Client name 
-
-Invoice number and amount due 
-
-Due date 
-
-A polite message reminding the client to pay 
-
-This email doesn’t need to actually send, just show a preview. 
-
-## Technical Requirements: 
-
-Use React with Typescript. 
-
-The design should be responsive and work well on desktop and mobile. 
-
-You are free to use a UI component library (e.g., Material UI, Bootstrap). 
-
-The code quality should be production ready, but it is important that you keep it simple. 
-
-
-## Submission: 
-
-Please submit a link to a GitHub repository with your solution, including a brief README.md file on how to run the project. 
-
-Bonus points for clean, maintainable code and attention to UI/UX. 
+- Clean and maintainable code.
+- Good attention to **UI/UX**.

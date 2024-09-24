@@ -1,6 +1,6 @@
 # Frontend Engineer Coding Challenge
 
-This project involves building a **mini-invoicing dashboard** where users can view and manage invoices. The goal is to create a responsive web app that aligns with the design and branding of [Attelas.ai](https://attelas.ai).
+This project involves building a **mini-invoicing dashboard** where users can view and manage invoices. The goal is to create a responsive web app that aligns with the design and branding of [Attelas.ai](https://attelas.ai). (you can take inspiration from the design at [Attelas.ai](https://attelas.ai)).
 
 ## Task Overview
 

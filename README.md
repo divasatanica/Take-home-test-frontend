@@ -44,10 +44,11 @@ Your task is to create a simple and clean invoicing dashboard using **React** an
 - You are free to use a UI component library like **Material UI** or **Bootstrap**.
 - Code quality should be production-ready while keeping the solution **simple and clean**.
 
-## Bonus Points
+## Things We value
 
-- Clean and maintainable code.
-- Good attention to **UI/UX**.
+- Clean and maintainable code
+- Good attention to **UI/UX**
+- Tests
 
-## Sumbbmition
+## Submission 
 Please submit a link to a GitHub repository with your solution, including a brief README.md file on how to run the project. 

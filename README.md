@@ -57,7 +57,7 @@ The design should be responsive and work well on desktop and mobile.
 
 You are free to use a UI component library (e.g., Material UI, Bootstrap). 
 
-The code quality should be production ready, but it is very important that you keep it simple. 
+The code quality should be production ready, but it is important that you keep it simple. 
 
 
 ## Submission: 

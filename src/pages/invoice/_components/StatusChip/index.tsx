@@ -13,5 +13,13 @@ const statusColorMap: Record<string, ChipOwnProps["color"]> = {
 export function StatusChip(props: IProps) {
   const { status } = props;
 
-  return <Chip size="small" label={status} color={statusColorMap[status]} />;
+  return (
+    <Chip
+      data-testid="status"
+      component="span"
+      size="small"
+      label={status}
+      color={statusColorMap[status]}
+    />
+  );
 }

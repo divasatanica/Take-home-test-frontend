@@ -57,5 +57,11 @@ const ChaseEmailDialog = create((props: IProps) => {
 const id = "chase-dialog";
 register(id, ChaseEmailDialog);
 
+/**
+ * Register the dialog as a service,
+ * you can use this function wherever you want to display a dialog
+ * @param props
+ * @returns
+ */
 export const renderChaseDialog = (props: IProps) =>
   show<void, IProps>(id, props);

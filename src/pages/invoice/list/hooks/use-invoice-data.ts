@@ -2,6 +2,10 @@ import { useCallback, useEffect, useState } from "react";
 import { InvoiceItem } from "../../../../services/mock";
 import { GetInvoiceList } from "../../../../services";
 
+/**
+ * Hooks that fetch invoice data
+ * @returns
+ */
 export function useInvoiceData() {
   const [list, setList] = useState<InvoiceItem[]>([]);
   const [loading, setLoading] = useState(false);

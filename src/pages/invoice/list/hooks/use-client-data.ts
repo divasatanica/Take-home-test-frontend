@@ -4,6 +4,10 @@ import { ClientItem } from "../../../../services/mock";
 import { useAtom, useSetAtom } from "jotai";
 import { clientAtom } from "../../../../store/client";
 
+/**
+ * Hooks that fetch client data
+ * @returns
+ */
 export function useClientMap() {
   const [clientMap] = useAtom(clientAtom);
   const clientMapRef = useRef(clientMap);

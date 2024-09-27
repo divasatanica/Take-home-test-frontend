@@ -4,10 +4,16 @@ import { InvoiceItem } from "../../../../services/mock";
 
 export function useInvoiceItem(invoiceNumber: string) {
   const [data, setData] = useState<InvoiceItem | null>(null);
+  const [loading, setLoading] = useState(false);
   const getInvoiceItem = useCallback(async (_invoiceNumber: string) => {
-    const res = await GetInvoiceByNumber(_invoiceNumber);
+    setLoading(true);
+    try {
+      const res = await GetInvoiceByNumber(_invoiceNumber);
 
-    setData(res);
+      setData(res);
+    } finally {
+      setLoading(false);
+    }
   }, []);
 
   useEffect(() => {
@@ -16,5 +22,6 @@ export function useInvoiceItem(invoiceNumber: string) {
 
   return {
     data,
+    loading,
   };
 }
